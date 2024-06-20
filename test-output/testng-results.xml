@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="26" passed="18" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-18T17:28:09 CEST" name="Suite" finished-at="2024-06-18T17:28:09 CEST" duration-ms="230">
+    <groups>
+      <group name="login">
+        <method signature="Admission.AdmissionLogin()[pri:0, instance:Admission@22a637e7]" name="AdmissionLogin" class="Admission"/>
+        <method signature="Faculty_Placement.PlacementLogin()[pri:0, instance:Faculty_Placement@6eda5c9]" name="PlacementLogin" class="Faculty_Placement"/>
+        <method signature="Faculty_Placement.PlacementLogin()[pri:0, instance:Faculty_Placement@498d318c]" name="PlacementLogin" class="Faculty_Placement"/>
+        <method signature="Faculty_Placement.FacultyLogin()[pri:0, instance:Faculty_Placement@498d318c]" name="FacultyLogin" class="Faculty_Placement"/>
+        <method signature="Faculty_Placement.PlacementLogin()[pri:0, instance:Faculty_Placement@384ad17b]" name="PlacementLogin" class="Faculty_Placement"/>
+        <method signature="Faculty_Placement.FacultyLogin()[pri:0, instance:Faculty_Placement@384ad17b]" name="FacultyLogin" class="Faculty_Placement"/>
+        <method signature="Admission.AdmissionLogin()[pri:0, instance:Admission@dbf57b3]" name="AdmissionLogin" class="Admission"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2024-06-18T17:28:09 CEST" name="Admission" finished-at="2024-06-18T17:28:09 CEST" duration-ms="37">
+      <class name="Admission">
+        <test-method signature="AdmissionLogin()[pri:0, instance:Admission@22a637e7]" started-at="2024-06-18T17:28:09 CEST" name="AdmissionLogin" finished-at="2024-06-18T17:28:09 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmissionLogin -->
+        <test-method signature="AdmissionBrokenlinks()[pri:0, instance:Admission@22a637e7]" started-at="2024-06-18T17:28:09 CEST" name="AdmissionBrokenlinks" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Admission.AdmissionLogin" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmissionBrokenlinks -->
+      </class> <!-- Admission -->
+    </test> <!-- Admission -->
+    <test started-at="2024-06-18T17:28:09 CEST" name="Placement" finished-at="2024-06-18T17:28:09 CEST" duration-ms="7">
+      <class name="Faculty_Placement">
+        <test-method signature="PlacementLogin()[pri:0, instance:Faculty_Placement@6eda5c9]" started-at="2024-06-18T17:28:09 CEST" name="PlacementLogin" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacementLogin -->
+        <test-method signature="PlacementBrokenlinks()[pri:0, instance:Faculty_Placement@6eda5c9]" started-at="2024-06-18T17:28:09 CEST" name="PlacementBrokenlinks" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Faculty_Placement.PlacementLogin" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacementBrokenlinks -->
+      </class> <!-- Faculty_Placement -->
+    </test> <!-- Placement -->
+    <test started-at="2024-06-18T17:28:09 CEST" name="Faculty" finished-at="2024-06-18T17:28:09 CEST" duration-ms="32">
+      <class name="Faculty_Placement">
+        <test-method signature="PlacementLogin()[pri:0, instance:Faculty_Placement@498d318c]" started-at="2024-06-18T17:28:09 CEST" name="PlacementLogin" finished-at="2024-06-18T17:28:09 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacementLogin -->
+        <test-method signature="PlacementBrokenlinks()[pri:0, instance:Faculty_Placement@498d318c]" started-at="2024-06-18T17:28:09 CEST" name="PlacementBrokenlinks" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Faculty_Placement.PlacementLogin" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacementBrokenlinks -->
+        <test-method signature="FacultyLogin()[pri:0, instance:Faculty_Placement@498d318c]" started-at="2024-06-18T17:28:09 CEST" name="FacultyLogin" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Faculty_Placement.PlacementLogin, Faculty_Placement.PlacementBrokenlinks" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacultyLogin -->
+        <test-method signature="FacultyBrokenlinks()[pri:0, instance:Faculty_Placement@498d318c]" started-at="2024-06-18T17:28:09 CEST" name="FacultyBrokenlinks" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Faculty_Placement.FacultyLogin" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacultyBrokenlinks -->
+      </class> <!-- Faculty_Placement -->
+    </test> <!-- Faculty -->
+    <test started-at="2024-06-18T17:28:09 CEST" name="Test_2" finished-at="2024-06-18T17:28:09 CEST" duration-ms="16">
+      <class name="Faculty_Placement">
+        <test-method signature="PlacementLogin()[pri:0, instance:Faculty_Placement@384ad17b]" started-at="2024-06-18T17:28:09 CEST" name="PlacementLogin" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacementLogin -->
+        <test-method signature="PlacementBrokenlinks()[pri:0, instance:Faculty_Placement@384ad17b]" started-at="2024-06-18T17:28:09 CEST" name="PlacementBrokenlinks" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Faculty_Placement.PlacementLogin" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlacementBrokenlinks -->
+        <test-method signature="FacultyLogin()[pri:0, instance:Faculty_Placement@384ad17b]" started-at="2024-06-18T17:28:09 CEST" name="FacultyLogin" finished-at="2024-06-18T17:28:09 CEST" depends-on-methods="Faculty_Placement.PlacementLogin, Faculty_Placement.PlacementBrokenlinks" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacultyLogin -->
+      </class> <!-- Faculty_Placement -->
+      <class name="Admission">
+        <test-method signature="AdmissionLogin()[pri:0, instance:Admission@dbf57b3]" started-at="2024-06-18T17:28:09 CEST" name="AdmissionLogin" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmissionLogin -->
+      </class> <!-- Admission -->
+    </test> <!-- Test_2 -->
+    <test started-at="2024-06-18T17:28:09 CEST" name="Subject" finished-at="2024-06-18T17:28:09 CEST" duration-ms="7">
+      <class name="Package_1.Subject">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="beforeTest" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="beforeClass" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="beforeMethod" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="SubjectBrokenlinks()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="SubjectBrokenlinks" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubjectBrokenlinks -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="afterMethod" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="beforeMethod" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="afterMethod" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="SubjectLogin()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="SubjectLogin" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubjectLogin -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="afterClass" finished-at="2024-06-18T17:28:09 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="afterTest" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Package_1.Subject -->
+    </test> <!-- Subject -->
+    <test started-at="2024-06-18T17:28:09 CEST" name="Assertion" finished-at="2024-06-18T17:28:09 CEST" duration-ms="21">
+      <class name="Package_1.Assertion">
+        <test-method signature="test1()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test1" finished-at="2024-06-18T17:28:09 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test2" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test to check title expected [comrevo] but found [parag]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test to check title expected [comrevo] but found [parag]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Package_1.Assertion.test2(Assertion.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test3" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test4" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test to check login credentials expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test to check login credentials expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at Package_1.Assertion.test4(Assertion.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test5()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test5" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method signature="test6()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test6" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test to check login credentials expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test to check login credentials expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at Package_1.Assertion.test6(Assertion.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method signature="test7()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test7" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method signature="test8()[pri:0, instance:Package_1.Assertion@478190fc]" started-at="2024-06-18T17:28:09 CEST" name="test8" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test to check login credentials expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test to check login credentials expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at Package_1.Assertion.test8(Assertion.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+      </class> <!-- Package_1.Assertion -->
+      <class name="Package_1.Subject">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="beforeSuite" finished-at="2024-06-18T17:28:09 CEST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Package_1.Subject@515aebb0]" started-at="2024-06-18T17:28:09 CEST" name="afterSuite" finished-at="2024-06-18T17:28:09 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Package_1.Subject -->
+    </test> <!-- Assertion -->
+  </suite> <!-- Suite -->
+</testng-results>

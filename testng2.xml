@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Force Download from "https://testng.org/testng-1.0.dtd"  -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="Admission">
+		<classes>
+			<class name="Admission" />
+		</classes>
+	</test>
+
+	<!-- To Exclude 1 test case from the class -->
+	<test name="Placement">
+		<classes>
+			<class name="Faculty_Placement">
+				<!-- Always use Methods to define exclusions -->
+				<methods>
+					<!-- Regular expression used to filter "Faculty" -->
+					<exclude name="Faculty.*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Faculty" parallel="true">
+		<classes>
+			<class name="Faculty_Placement">
+				<methods>
+					<!-- If Nothing included, all will be excluded -->
+					<!-- When a test case is included, others will be excluded -->
+					<include name="Faculty.*" />
+					<include name="Placement.*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Group of Modules are "Suite" -->
+	<!-- Concurrent Execution of Tests are causing non-sequential order-->
+	<test thread-count="5" name="Test_2">
+		<!-- Group of classes are called "Module"  -->
+		<!-- This will only run test cases inside group, ignoring test cases from classes  -->
+		<!-- Make sure importing necessary classes to make it work  -->
+		<groups>
+			<run>
+				<include name = "login" />
+			</run>
+		</groups>
+		
+		<classes>
+			<!-- If Tests are inside (deault package), use the following way  -->
+			<!-- <class name ="Package_1.Subject"></class> -->
+			<class name="Admission" />
+			<class name="Faculty_Placement" />
+		</classes>
+		
+	</test> <!--Test -->
+
+	<!--<test name="Subject">
+		<packages>
+			<package name="Package_1.*">
+			</package>
+		</packages>
+	</test>-->
+	
+	<test name="Subject">
+        <classes>
+            <class name="Package_1.Subject"/> <!-- Include only subject.java -->
+        </classes>
+    </test>
+	
+	<test name="Assertion">
+		<classes>
+			<class name="Package_1.Assertion" />
+		</classes>
+	</test>
+	
+</suite> <!--Suite -->
